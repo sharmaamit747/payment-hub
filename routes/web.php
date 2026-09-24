@@ -54,7 +54,7 @@ Route::name('admin.')
             |--------------------------------------------------------------------------
             */
 
-            Route::get('/', [DashboardController::class, 'index'])
+            Route::get('/admin/dashboard', [DashboardController::class, 'index'])
                 ->middleware('permission:system.view')
                 ->name('dashboard');
 
